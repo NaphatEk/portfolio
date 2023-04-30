@@ -1,0 +1,283 @@
+/* --------------------------------- */
+/* SETUP */  
+/* ---------------------------------*/
+
+/* orange color: #e67e22 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility; 
+}
+
+/* --------------------------------- */
+/* REUSABLE COMPONENTS */
+/* --------------------------------- */
+
+.row {
+    max-width: 1140px;   /* not auto */
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 250%;
+    word-spacing: 5px;
+}
+
+h2 {
+    font-size: 120%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px
+}
+
+h2:after {
+    display: block;
+    content: " ";
+    background-color: #e67e22; 
+    height: 2px;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 105%;
+    margin-bottom: 15px;
+}
+
+.box {
+    padding-right: 1%;
+    margin-bottom: 15px;
+}
+
+/* ----- PARAGRAPH -----*/
+.long-copy {
+    width: 70%;
+    margin-left: 15%;
+    line-height: 135%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height:130%
+}
+
+/*------ ICON ---------*/
+.icon-big {
+    display: block;
+    font-size: 300%;
+    color: #e67e22;
+    margin-bottom: 10px;
+    
+}
+
+/* ----- BUTTONS ----- */
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    border: 1px solid #e67e22;
+    transition: background-color 0.2s;
+    transition: border 0.2s;
+
+}
+
+.btn-std:link,
+.btn-std:visited {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17;
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    color: #fff;
+}
+
+/* --------------------------------- */
+/* HEADER */
+/* ---------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/brewing.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-text-box {
+    position: absolute;
+ /*   width: 1140px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited  {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #19e540;
+}
+
+.clearfix { zoom: 1; }
+.clearfix:after {
+    content: 'Some Hidden Text';
+    visibility: hidden;
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+
+/* --------------------------------- */
+/* SECTION 1 FEATURE */
+/* ----------------------------------*/
+.section-feature .long-copy{
+    margin-bottom: 30px;
+}
+
+/* --------------------------------- */
+/* SECTION 2 MENU */
+/* ----------------------------------*/
+.section-menu {
+    padding: 0;
+}
+
+.menu-show {
+    list-style: none;
+    width: 100%;
+}
+
+.menu-show li {
+    float:left;
+    width: 25%;
+}
+
+.menu-photo {  
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.menu-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height:auto;
+    transform: scale(1.20);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.menu-photo img:hover {
+    transform: scale(1.06);
+    opacity: 1;
+}
+
+/* --------------------------------- */
+/* SECTION 3 App */
+/* ----------------------------------*/
+
+.app-box{
+    margin-top: 50px;
+}
+
+.app-box:first-child{
+    text-align: right;
+    padding-right: 3%
+}
+
+.app-box:last-child{
+    padding-left: 3%;
+}
+
+.app-box > img{
+    width: 60%;
+    padding-bottom: 10px;
+}
+
+.app-box a img{
+    height: 70px;
+    margin-left: 2%;
+}
+
+.app-step{
+    margin-bottom: 12px;
+}
+
+.app-step div{
+    border:2px solid #e67e22;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #e67e22;
+    text-align: center;
+    padding-top: 8px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
