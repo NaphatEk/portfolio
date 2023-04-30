@@ -1,3 +1,13 @@
+<?php
+
+    session_start();
+
+    if(isset($_SESSION['userLevel']) && $_SESSION['userLevel'] == 'admin'){
+        header("location: adminPage.php");
+    }
+    else {
+ ?>
+
 <html>
 <link rel="stylesheet" type="text/css" href="style.css">
 <body>
@@ -8,7 +18,7 @@
 </header>
 <blockquote>
     <?php
-    session_start();
+    
    
     if(isset($_POST['loginButton'])) {
         include ('server.php');
@@ -41,8 +51,10 @@
         header("Location: index.php");  
     }
 }
-    
+   
+}
 ?>
+
 <center><h1>Login</h1></center>
 <form method="post" action="login.php">
     Username:<br><input type="text" name="username" required placeholder="Enter your user name" maxlength="20"/>

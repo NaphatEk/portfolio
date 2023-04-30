@@ -1,14 +1,13 @@
 <?php
 
     session_start();
-    if(isset($_SESSION['userLevel'])){
-        $userLevel = $_SESSION['userLevel'];
+
+    if(isset($_SESSION['userLevel']) && $_SESSION['userLevel'] == 'admin'){
+        header("location: adminPage.php");
     }
-     else {
-        
+    else {
+
 ?>
-
-
 
 
 <html>
@@ -106,6 +105,7 @@ echo "</td>";
 echo "</tr>";
     echo "</table>";
 
-}?>
+}
+?>
 </body>
 </html>
