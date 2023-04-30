@@ -1,0 +1,74 @@
+header {
+    background-color: rgb(231, 107, 12);
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    }
+    
+    .logout-button {
+        background-color: #fff;
+        border: none;
+        border-radius: 20px;
+        text-align: center;
+        transition-duration: 0.5s;
+        padding: 8px 30px;
+        cursor: pointer;
+        color: #000;
+        font-weight: bold;
+        margin-left: 20px;
+      }
+      
+      .logout-button:hover {
+        background-color: #ccc;
+      }
+    
+    table {  
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%; 
+    }
+    
+    th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    height: 50px; 
+    }
+    
+    th {
+    background-color: rgb(231, 107, 12);
+    width: 33.3%; 
+    }
+
+      .action-button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+      }
+      
+      .add-to-book {
+        background-color: #4CAF50; 
+      }
+      
+      .edit-button {
+        background-color:  rgb(231, 107, 12); 
+      }
+
+      .delete-button {
+        background-color: #f44336; 
+      }
+      
+
+  

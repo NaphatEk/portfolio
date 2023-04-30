@@ -1,0 +1,146 @@
+body{
+    font-family: Arial;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(231, 107, 12);
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    margin-left: 2%;
+}
+
+header .hf{
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+}
+
+header .hi{
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    transition-duration: 0.5s; 
+    padding: 8px 30px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+header .hi:hover{
+    background-color: #ccc;
+}
+
+header a {
+    font-size: 24px;
+    margin-left: 2%;
+    color: #fff;
+}
+
+table {
+    border-collapse: collapse;
+    width:50%;
+    margin:auto;
+}
+tr{
+    background-color: #fff;
+}
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px; 
+    font-size:24px;
+    background-color: rgb(231, 107, 12);
+    color: white;
+}
+.cart-title {
+    flex: 1;
+    text-align: center;
+    padding-right: 10px;
+}
+.empty-cart-form {
+    margin-left: auto;
+}
+.empty-cart-btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    transition-duration: 0.5s; 
+    padding: 8px 30px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+}
+.empty-cart-btn:hover {
+    background-color: #ccc;
+}
+
+table .btn:hover{
+    background-color: #e3e3e3;
+    color: #ec7115;
+}
+
+.button{
+    background-color: rgb(231, 107, 12);
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    transition-duration: 0.5s; 
+    padding: 8px 30px;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 5%;
+    font-weight: bold;
+}
+.button:hover {
+    background-color: rgb(230, 230, 20);
+    color: #000;
+}
+.cbtn{
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    transition-duration: 0.5s; 
+    padding: 8px 30px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+}
+.cbtn:hover{
+    background-color: #ccc;
+}
+
+form{
+	margin-top: 2%;
+}
+input[type=text], input[type=password]{	
+	width: 100%;
+	padding: 12px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    transition: 0.5s;
+    outline: none;
+}
+
+textarea {
+	outline: none;
+	border: 2px solid #ccc;
+}
+
+.img-size {
+    width: 500px; 
+    height: auto; 
+  }
