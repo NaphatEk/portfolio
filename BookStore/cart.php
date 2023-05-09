@@ -27,7 +27,6 @@ if(isset($_POST['checkout'])){
         $quantity = $row['Quantity'];
 
         if(!isset($_SESSION['userid'])){
-            $_SESSION['check'] = 'You must login first';
             header("Location: login.php");
         }
         else{
@@ -35,12 +34,10 @@ if(isset($_POST['checkout'])){
             $conn->query($setBook);
 
             if(mysqli_query($conn, $sql)) {
-                $_SESSION['success'] = 'Your puchase successfully';
                 $sql = "DELETE FROM cart";
                 $conn->query($sql);
                 header("Location: index.php");
             } else {
-                $_SESSION['error'] = 'Something went wrong';
                 header("Location: cart.php");
             }
         }

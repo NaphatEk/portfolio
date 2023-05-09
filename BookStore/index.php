@@ -76,7 +76,8 @@ while($row = $result->fetch_assoc()) {
         echo "<tr>";
     }
 	$max_quantity = $row['Quantity'];
-    echo "<td>";
+    
+echo "<td>";
 echo "<table>";
 echo '<tr><td>'.'<div class="img-resize"><img src="'.$row["Image"].'"></div>'.
     '</td></tr><tr><td style="padding: 5px;">Title: '.$row["BookTitle"].
@@ -97,8 +98,6 @@ echo "</table>";
 echo "</td>";
     $count++; 
 }
-echo "</tr>";
-    echo "</table>";
 
 }
 ?>

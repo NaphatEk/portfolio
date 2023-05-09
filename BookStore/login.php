@@ -57,9 +57,9 @@
 
 <center><h1>Login</h1></center>
 <form method="post" action="login.php">
-    Username:<br><input type="text" name="username" required placeholder="Enter your user name" maxlength="20"/>
+    Username:<br><input type="text" name="username" required placeholder="Enter your user name" maxlength="30"/>
     <br><br>
-    Password:<br><input type="password" name="pwd" required placeholder="Enter your password" maxlength="20"/>
+    Password:<br><input type="password" name="pwd" required placeholder="Enter your password" maxlength="30"/>
     <br><br>
     <input class="button" type="submit" name="loginButton" value="Login"/>
     <input class="button" type="button" name="cancel" value="Cancel" onClick="window.location='index.php';" />
