@@ -70,7 +70,6 @@ echo '<blockquote>';
 echo "<table id='myTable' style='width:80%; margin:0 auto;'>";
 
 $count = 0; 
-$quantity_limit = $conn->query("SELECT Quantity  FROM book;")->fetch_row()[0];
 
 while($row = $result->fetch_assoc()) {
     if ($count % 3 == 0) { 
@@ -84,7 +83,7 @@ echo '<tr><td>'.'<div class="img-resize"><img src="'.$row["Image"].'"></div>'.
      '</td></tr><tr><td style="padding: 5px;">'.'</td></tr><tr><td style="padding: 5px;">Author: '.$row["Author"].
      '</td></tr><tr><td style="padding: 5px;">Type: '.$row["Type"].'</td></tr><tr><td style="padding: 5px;">';
 
-    echo 'RM'.$row["Price"].'</td></tr><tr><td style="padding: 5px;">
+    echo 'Bath:'.$row["Price"].'</td></tr><tr><td style="padding: 5px;">
     <form action="" method="post">
     Quantity: <input type="number" value="0" name="quantity" min="0" max="'.$max_quantity.'" step="1" style="width: 20%" /><br>
     <input type="hidden" value="'.$row['BookID'].'" name="add"/>';
@@ -96,11 +95,7 @@ echo '<tr><td>'.'<div class="img-resize"><img src="'.$row["Image"].'"></div>'.
 }
 echo "</table>";
 echo "</td>";
-
     $count++; 
-    if ($count % 3 == 0) { 
-        echo "</tr>";
-    }
 }
 echo "</tr>";
     echo "</table>";
